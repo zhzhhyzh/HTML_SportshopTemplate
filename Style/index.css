@@ -1,0 +1,242 @@
+.product__grid__container {
+    max-width: 800px;
+    /* Adjust according to your design */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+}
+
+.product__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Ensure products wrap to the next line if container is too small */
+}
+
+.product {
+    flex-basis: calc(33.33% - 20px);
+    /* Adjust the width of each product item */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product__grid__title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    /* Ensure aspect ratio is maintained */
+    transition: transform 0.3s ease;
+    /* Add transition effect */
+}
+
+.product:hover img {
+    transform: scale(1.1);
+    /* Zoom out effect on hover */
+}
+
+/* .product h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  } */
+
+.product p {
+    margin-bottom: 10px;
+}
+
+
+.product__grid .product:nth-child(2) h3 {
+    color: gold;
+    /* Gold color */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product__grid .product:nth-child(3) h3 {
+    color: #007bff;
+    /* Blue color, adjust as needed */
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Styling for the "Second Runner Up" label */
+.product__grid .product:nth-child(4) h3 {
+    color: #28a745;
+    /* Green color, adjust as needed */
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.video__container {
+    position: relative;
+    display: inline-block;
+}
+
+.video__container::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 10px solid transparent;
+    background-image: url('path/to/your/wallpaper.jpg');
+    /* Replace 'path/to/your/wallpaper.jpg' with the actual path to your wallpaper image */
+    background-size: cover;
+    z-index: -1;
+}
+
+.video__title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.founder__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.founder__info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.portrait__container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.founder__portrait {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.description__container {
+    flex: 1;
+}
+
+.founder__title {
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* Optional: Add border-radius for video container */
+}
+
+
+.store__info__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .store__info__intro {
+    text-align: center;
+  }
+  
+  .store__info__intro p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+
+  .main__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 56px 23px;
+    background-color: #c3cbf3;
+}
+
+.main__container img {
+    width: 300px;
+    height: 100%;
+    flex: 1;
+    padding: 0px;
+    background-color: #354084;
+    border-radius: calc(700px/2);
+}
+
+.main__title {
+    font-weight: bolder;
+    font-size: 64px;
+    padding: 11px;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.main__text {
+    flex: 3;
+    padding: 68px 23px;
+    max-width: 50%;
+}
+
+.main__desc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 11px;
+    line-height: 40px;
+
+}
+
+.main__btn {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 11px;
+
+}
+
+.main__container button {
+    background-color: #7840e9;
+    color: white;
+    padding: 20px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.main__container button:hover {
+
+    background-color: white;
+    padding: 20px 32px;
+    border: 2px solid #40e9ca;
+    color: #40e99d;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
